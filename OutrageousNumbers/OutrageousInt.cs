@@ -168,6 +168,42 @@ namespace OutrageousNumbers
             throw new NotImplementedException();
         }
 
+        public static bool TryConvertFromChecked<TOther>(TOther value, out OutrageousInt result)
+        where TOther : INumberBase<TOther>
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool TryConvertFromSaturating<TOther>(TOther value, out OutrageousInt result)
+        where TOther : INumberBase<TOther>
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool TryConvertFromTruncating<TOther>(TOther value, out OutrageousInt result)
+        where TOther : INumberBase<TOther>
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool TryConvertToChecked<TOther>(OutrageousInt value, out TOther result)
+        where TOther : INumberBase<TOther>
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool TryConvertToSaturating<TOther>(OutrageousInt value, out TOther result)
+        where TOther : INumberBase<TOther>
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool TryConvertToTruncating<TOther>(OutrageousInt value, out TOther result)
+        where TOther : INumberBase<TOther>
+        {
+            throw new NotImplementedException();
+        }
+
         public int CompareTo(object? obj)
         {
             throw new NotImplementedException();
@@ -264,6 +300,26 @@ namespace OutrageousNumbers
         }
 
         public static bool operator >=(OutrageousInt left, OutrageousInt right)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool Equals(object? obj)
+        {
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (ReferenceEquals(obj, null))
+            {
+                return false;
+            }
+
+            throw new NotImplementedException();
+        }
+
+        public override int GetHashCode()
         {
             throw new NotImplementedException();
         }
