@@ -1,7 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.Numerics;
-using System.Runtime.InteropServices;
+﻿using System.Numerics;
 
 namespace OutrageousNumbers
 {
@@ -13,6 +10,6 @@ namespace OutrageousNumbers
 
         public OutrageousInt(OutrageousInt value) => Value = value.Value;
 
-        private int Value { get; set; }
+        public int Value { get; private set; }
     }
 }
